@@ -1,0 +1,213 @@
+/******************************************************/
+/* General Styling */
+/******************************************************/
+html {
+    font-family: Lato, sans-serif;
+    background-color: rgb(255, 255, 255);
+}
+
+body {
+    margin: 0;
+}
+
+main {
+    width: 80%;
+    margin: 80px 160px;
+}
+
+/******************************************************/
+/* Header Styling */
+/******************************************************/
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: baseline;
+    width: 80px;
+    height: 100%;
+    background-color: #24292f;
+}
+
+/* FontAwesome Icon Styling */
+.fa-brands, .fa-solid {
+    padding: 20px;
+    width: 40px;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+}
+
+.fa-solid, .fa-brands {
+    font-size: 20px;
+}
+
+.fa-solid:hover, .fa-brands:hover {
+    background-color: white;
+}
+
+.fa-solid:hover {
+    color: #24292f;
+}
+
+.fa-linkedin:hover {
+    color: #0e76a8;
+}
+
+.fa-github:hover {
+    color: #333;
+}
+
+.fa-medium:hover {
+    color: rgba(41, 41, 41, 1);
+}
+
+/* Headshot Styling */
+img.headshot {
+    padding: 20px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    text-align: center;
+    outline: 2px solid white;
+    outline-offset: -20px;
+}
+
+/* Tooltip Styling */
+a {
+    position: relative;
+    display: inline-block;
+}
+
+a span.tooltip {
+    visibility: hidden;
+    width: 80px;
+    background-color: #24292f;
+    color: #fff;
+    font-family: Lato, sans-serif;
+    font-size: 14px;
+    text-align: center;
+    padding: 7px 0;
+    border-radius: 6px;
+   
+    position: absolute;
+    top: 13px;
+    left: 100%;
+    z-index: 1;
+}
+
+a:hover span.tooltip {
+    visibility: visible;
+    opacity: .9;
+}
+
+/******************************************************/
+/* Portfolio Content Styling */
+/******************************************************/
+
+article.portfolio, section.assignment {
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: 45%;
+}
+
+section.assignment {
+    padding: 25px;
+    margin: 20px 0;
+    border-top: solid 1px #e4e4e4;
+}
+
+/* article section:last-child, article section:nth-last-child(2) {
+    border-bottom: solid 1px #e4e4e4;
+} */
+
+h2.portfolio {
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+/* Section Icons */
+h2.personal::before {
+    font: var(--fa-font-solid);
+    content: "\f007   ";
+}
+
+h2.mmc5277::before {
+    font: var(--fa-font-solid);
+    content: "\f19d   ";
+}
+
+h2.codecademy::before {
+    font: var(--fa-font-solid);
+    content: "\f5fc   ";
+}
+
+/* Section Styling */
+h3.portfolio {
+    font-size: 25px;
+    font-weight: 600;
+    color: #3b2ae5;
+    margin: 0;
+}
+
+section.assignment p {
+    font-size: 16px;
+    flex-basis: 90%;
+    color: rgb(70, 70, 70);
+}
+
+/* 
+section.assignment p.tech {
+    padding: 0;
+    flex-basis: 60%;
+    border: solid 1.5px black;
+} */
+
+section.assignment span.bold_text {
+    font-weight: bolder;
+    opacity: .6;
+    background-color: #3b2ae5;
+    color: white;
+    padding: 3px;
+}
+
+section.assignment a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 600;
+}
+
+section.assignment a::after {
+    font: var(--fa-font-solid);
+    content: " \f061";
+}
+
+.row_break {
+    flex-basis: 100%;
+    height: 0;
+}
+
+section.assignment:hover {
+    background-color: gainsboro;
+}
+
+/******************************************************/
+/* Footer Styling */
+/******************************************************/
+
+footer {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    padding: 10px;
+    margin: 2px;
+    color: white;
+    background-color: #24292f;
+    border-radius: 10px;
+    opacity: .4;
+}
