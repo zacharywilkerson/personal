@@ -129,17 +129,17 @@ h2.portfolio {
 }
 
 /* Section Icons */
-h2.personal::before {
+h2#personal::before {
     font: var(--fa-font-solid);
     content: "\f007   ";
 }
 
-h2.mmc5277::before {
+h2#mmc5277::before {
     font: var(--fa-font-solid);
     content: "\f19d   ";
 }
 
-h2.codecademy::before {
+h2#codecademy::before {
     font: var(--fa-font-solid);
     content: "\f5fc   ";
 }
