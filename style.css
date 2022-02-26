@@ -107,8 +107,6 @@ a:hover span.tooltip {
 /* Portfolio Content Styling */
 /******************************************************/
 
-
-
 article.portfolio, section.assignment {
     display: flex;
     flex-wrap: wrap;
@@ -169,10 +167,10 @@ section.assignment p.tech {
 
 section.assignment span.bold_text {
     font-weight: bolder;
-    opacity: .6;
+    opacity: .9;
     background-color: #3b2ae5;
     color: white;
-    padding: 3px;
+    padding: 2px;
 }
 
 section a {
@@ -202,12 +200,13 @@ section.assignment:hover {
 /* */
 
 .full_width_img {
-    position: absolute;
-    top: 80px;
-    left: 80px;
-    z-index: -1;
-    width: 1200px;
-    height: 800px;
+    background: url(images/home/portrait.JPG) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    width: 100%;
+    overflow: auto;
 }
 /******************************************************/
 /* Footer Styling */
@@ -221,9 +220,14 @@ footer {
     margin: 2px;
     color: white;
     background-color: #24292f;
+    text-align: center;
     border-radius: 10px;
-    opacity: .4;
+    opacity: .9;
 }
+
+/******************************************************/
+/* MEDIA QUERIES */
+/******************************************************/
 
 @media screen and (max-width: 1250px) {
     header {
@@ -246,7 +250,7 @@ footer {
     }
     .fa-brands{
         padding: 0 8px;
-        width: 10px;
+        width: 15px;
         font-size: 15px;
     }
     
@@ -273,6 +277,18 @@ footer {
 
 @media screen and (max-width: 900px) {
     footer {
-        display: none;
+        visibility: hidden;
+        /* position: relative;
+        bottom: 0px;
+        width: 100%;
+        padding: 8px 0px;
+        text-align: center;
+        margin: 0;
+        border-radius: 0;
+        opacity: 1; */
+    }
+
+    .fa-brands:hover {
+        background-color: white;
     }
 }
