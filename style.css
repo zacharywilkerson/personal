@@ -223,12 +223,6 @@ footer {
     opacity: .4;
 }
 
-@media screen and (max-width: 900px) {
-    footer {
-        display: none;
-    }
-}
-
 @media screen and (max-width: 1250px) {
     header {
         /* visibility: hidden; */
@@ -242,7 +236,7 @@ footer {
     img.headshot {
         padding: 0;
     }
-
+    
     .fa-solid {
         padding: 0 11px;
         width: 30px;
@@ -253,12 +247,30 @@ footer {
         width: 10px;
         font-size: 15px;
     }
-
+    
+    .fa-solid:hover {
+        padding: 30px 15px;
+    }
+    
+    .fa-solid:hover, .fa-brands:hover {
+        padding: 33px 15px;
+    }
+    
+    a:hover span.tooltip {
+        visibility: hidden;
+    }
+    
     main {
         margin: 100px 40px;
     }
     article.portfolio, section.assignment {
         flex-basis: 100%;
         margin: 0;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    footer {
+        display: none;
     }
 }
