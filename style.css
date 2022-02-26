@@ -71,8 +71,8 @@ img.headshot {
     height: 40px;
     border-radius: 50%;
     text-align: center;
-    outline: 2px solid white;
-    outline-offset: -20px;
+    /* outline: 2px solid white;
+    outline-offset: -20px; */
 }
 
 /* Tooltip Styling */
@@ -241,7 +241,6 @@ footer {
     }
     img.headshot {
         padding: 0;
-        outline-offset: 0px;
     }
 
     .fa-solid {
