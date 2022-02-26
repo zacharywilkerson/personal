@@ -196,6 +196,17 @@ section.assignment:hover {
     background-color: gainsboro;
 }
 
+
+/* */
+
+.full_width_img {
+    position: absolute;
+    top: 80px;
+    left: 80px;
+    z-index: -1;
+    width: 1200px;
+    height: 800px;
+}
 /******************************************************/
 /* Footer Styling */
 /******************************************************/
@@ -210,4 +221,45 @@ footer {
     background-color: #24292f;
     border-radius: 10px;
     opacity: .4;
+}
+
+@media screen and (max-width: 900px) {
+    footer {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1250px) {
+    header {
+        /* visibility: hidden; */
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 100%;
+        height: 80px;
+        z-index: 1;
+    }
+    img.headshot {
+        padding: 0;
+        outline-offset: 0px;
+    }
+
+    .fa-solid {
+        padding: 0 11px;
+        width: 30px;
+        font-size: 20px;
+    }
+    .fa-brands{
+        padding: 0 8px;
+        width: 10px;
+        font-size: 15px;
+    }
+
+    main {
+        margin: 100px 40px;
+    }
+    article.portfolio, section.assignment {
+        flex-basis: 100%;
+        margin: 0;
+    }
 }
