@@ -107,6 +107,8 @@ a:hover span.tooltip {
 /* Portfolio Content Styling */
 /******************************************************/
 
+
+
 article.portfolio, section.assignment {
     display: flex;
     flex-wrap: wrap;
@@ -173,7 +175,7 @@ section.assignment span.bold_text {
     padding: 3px;
 }
 
-section.assignment a {
+section a {
     text-decoration: none;
     color: black;
     font-weight: bold;
@@ -182,7 +184,7 @@ section.assignment a {
     font-weight: 600;
 }
 
-section.assignment a::after {
+section a::after {
     font: var(--fa-font-solid);
     content: " \f061";
 }
